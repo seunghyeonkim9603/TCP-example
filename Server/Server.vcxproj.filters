@@ -18,33 +18,27 @@
     <ClCompile Include="main.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="Player.cpp">
+    <ClCompile Include="Server.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Message.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="Console.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="ApplicationManager.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="Visualizer.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Player.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="Console.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
     <ClInclude Include="Message.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="ApplicationManager.h">
+    <ClInclude Include="Server.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="Visualizer.h">
+    <ClInclude Include="UserInfo.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Console.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
   </ItemGroup>

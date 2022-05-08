@@ -4,17 +4,19 @@ class Player final
 {
 public:
 	Player() = delete;
-	Player(IntVector2D position, int ID);
+	Player(int x, int y, int ID);
 	Player(Player& other);
 	void operator=(Player& other);
+	bool operator==(const Player& other) const;
 	~Player();
 
-public:
-	int GetID(void);
-	IntVector2D GetPosition(void);
-	void Move(IntVector2D moveOffset);
+	int GetID() const;
+	int GetX() const;
+	int GetY() const;
+	void Move(int toX, int toY);
 
 private:
 	int mID;
-	IntVector2D mPosition;
+	int mX;
+	int mY;
 };

@@ -1,40 +1,52 @@
-#include "IntVector2D.h"
 #include "Player.h"
 
-Player::Player(IntVector2D position, int ID)
+Player::Player(int x, int y, int ID)
 	: mID(ID),
-	mPosition(position)
+	mX(x),
+	mY(y)
 {
 }
 
 Player::Player(Player& other)
 	: mID(other.mID),
-	mPosition(other.mPosition)
+	mX(other.mX),
+	mY(other.mY)
 {
 }
 
 void Player::operator=(Player& other)
 {
 	mID = other.mID;
-	mPosition = other.mPosition;
+	mX = other.mX;
+	mY = other.mY;
+}
+
+bool Player::operator==(const Player& other) const
+{
+	return mID == other.mID;
 }
 
 Player::~Player()
 {
 }
 
-int Player::GetID(void)
+int Player::GetID() const
 {
 	return mID;
 }
 
-IntVector2D Player::GetPosition(void)
+int Player::GetX() const
 {
-	return mPosition;
+	return mX;
 }
 
-void Player::Move(IntVector2D moveOffset)
+int Player::GetY() const
 {
-	mPosition.X += moveOffset.X;
-	mPosition.Y += moveOffset.Y;
+	return mY;
+}
+
+void Player::Move(int toX, int toY)
+{
+	mX = toX;
+	mY = toY;
 }
